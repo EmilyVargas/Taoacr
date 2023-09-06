@@ -1,16 +1,14 @@
-uuid: 8bc57286-4df8-454f-a951-4db88b2282fa
+uuid: 810b89c5-cbc5-4290-b9ed-c6204484b2e1
 langcode: en
 status: true
 dependencies:
   module:
     - file
     - image
-    - node
-_core:
-  default_config_hash: EymokncRIZ7SgQT2IdOQhQJicX4nNc0K89ik-LxmOHE
-id: node.field_image
-field_name: field_image
-entity_type: node
+    - media
+id: media.field_media_image
+field_name: field_media_image
+entity_type: media
 type: image
 settings:
   target_type: file
@@ -27,8 +25,6 @@ module: image
 locked: false
 cardinality: 1
 translatable: true
-indexes:
-  target_id:
-    - target_id
+indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

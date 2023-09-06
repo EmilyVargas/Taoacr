@@ -1,0 +1,39 @@
+uuid: af001d2a-0547-4c14-8a29-fba7b20c5cb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.work_type.field_image
+    - taxonomy.vocabulary.work_type
+  module:
+    - media_library
+id: taxonomy_term.work_type.default
+targetEntityType: taxonomy_term
+bundle: work_type
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 2
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

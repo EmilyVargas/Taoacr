@@ -1,0 +1,39 @@
+uuid: 1d9a2068-3b3e-4d35-94bd-ed8b5e6c800b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.work_sample.field_media_image
+    - field.field.media.work_sample.field_work_type
+    - image.style.thumbnail
+    - media.type.work_sample
+  module:
+    - image
+id: media.work_sample.media_library
+targetEntityType: media
+bundle: work_sample
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_work_type: true
+  path: true
+  status: true
+  uid: true

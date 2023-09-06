@@ -1,0 +1,34 @@
+uuid: db3da2f5-9bf6-47cf-be40-ba93221f3ca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.work_type_list
+    - field.field.taxonomy_term.work_type.field_image
+    - image.style.work_type_item
+    - taxonomy.vocabulary.work_type
+  module:
+    - layout_builder
+    - media
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.work_type.work_type_list
+targetEntityType: taxonomy_term
+bundle: work_type
+mode: work_type_list
+content:
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: work_type_item
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  description: true

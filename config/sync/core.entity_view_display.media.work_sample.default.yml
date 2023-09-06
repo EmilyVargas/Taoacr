@@ -1,0 +1,33 @@
+uuid: 2a099b49-8078-44e1-8b1c-a30da64717d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.work_sample.field_media_image
+    - field.field.media.work_sample.field_work_type
+    - image.style.large
+    - media.type.work_sample
+  module:
+    - image
+id: media.work_sample.default
+targetEntityType: media
+bundle: work_sample
+mode: default
+content:
+  field_media_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_work_type: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 4f1d95fe-5fd9-4100-a0ee-31c6c2d264ae
+langcode: en
+status: true
+dependencies: {  }
+name: work_type_item
+label: 'Work Type Item'
+effects:
+  c22b46aa-0850-4090-87e3-d9af6b64ea5b:
+    uuid: c22b46aa-0850-4090-87e3-d9af6b64ea5b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 333
+      height: 376
+      anchor: center-center
+  b5f400ff-6d47-4e49-bf37-c1afb1c3d60a:
+    uuid: b5f400ff-6d47-4e49-bf37-c1afb1c3d60a
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

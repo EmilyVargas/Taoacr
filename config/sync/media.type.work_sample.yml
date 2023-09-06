@@ -1,0 +1,14 @@
+uuid: 1f24ba18-256c-44e3-a3e0-63a0a976f46f
+langcode: en
+status: true
+dependencies: {  }
+id: work_sample
+label: 'Work Sample'
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name
